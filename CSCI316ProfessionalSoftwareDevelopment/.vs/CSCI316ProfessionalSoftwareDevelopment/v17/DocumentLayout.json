@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFD4EC58-2DB0-2674-5236-090AFCCE46B0}|Module11_UnitTesting.Tests\\Module11_UnitTesting.Tests.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module11_unittesting.tests\\calculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFD4EC58-2DB0-2674-5236-090AFCCE46B0}|Module11_UnitTesting.Tests\\Module11_UnitTesting.Tests.csproj|solutionrelative:module11_unittesting.tests\\calculatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFD4EC58-2DB0-2674-5236-090AFCCE46B0}|Module11_UnitTesting.Tests\\Module11_UnitTesting.Tests.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module11_unittesting.tests\\module11_unittesting.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AFD4EC58-2DB0-2674-5236-090AFCCE46B0}|Module11_UnitTesting.Tests\\Module11_UnitTesting.Tests.csproj|solutionrelative:module11_unittesting.tests\\module11_unittesting.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5BC7C3D-1AFE-39C5-6F8E-F6949FBA1F10}|Module5_OOP\\Module5_OOP.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module5_oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5BC7C3D-1AFE-39C5-6F8E-F6949FBA1F10}|Module5_OOP\\Module5_OOP.csproj|solutionrelative:module5_oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEBA0226-5B02-2FED-81E2-575C9A6E2735}|Module11_UnitTesting\\Module11_UnitTesting.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module11_unittesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEBA0226-5B02-2FED-81E2-575C9A6E2735}|Module11_UnitTesting\\Module11_UnitTesting.csproj|solutionrelative:module11_unittesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DB0A21D-8AB9-E76C-A64C-1D4E9F26FF58}|Module9_LINQ\\Module9_LINQ.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module9_linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DB0A21D-8AB9-E76C-A64C-1D4E9F26FF58}|Module9_LINQ\\Module9_LINQ.csproj|solutionrelative:module9_linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DB7AFC-50BF-7576-5F81-7C236E13A14C}|Module8_FileIO\\Module8_FileIO.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module8_fileio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DB7AFC-50BF-7576-5F81-7C236E13A14C}|Module8_FileIO\\Module8_FileIO.csproj|solutionrelative:module8_fileio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263EC1C1-38EB-CAEB-2C94-A169DF6751C0}|Module7_ExceptionHandling\\Module7_ExceptionHandling.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module7_exceptionhandling\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263EC1C1-38EB-CAEB-2C94-A169DF6751C0}|Module7_ExceptionHandling\\Module7_ExceptionHandling.csproj|solutionrelative:module7_exceptionhandling\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C20B19-BAEB-B330-BF88-01CE62B0703D}|Module6_Collections\\Module6_Collections.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module6_collections\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5C20B19-BAEB-B330-BF88-01CE62B0703D}|Module6_Collections\\Module6_Collections.csproj|solutionrelative:module6_collections\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C397975-36BD-53EA-330F-FCAE3C852CFC}|Module4_Methods\\Module4_Methods.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module4_methods\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C397975-36BD-53EA-330F-FCAE3C852CFC}|Module4_Methods\\Module4_Methods.csproj|solutionrelative:module4_methods\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2535A9BB-2A89-CE90-CCED-2B648991CD96}|Module3_ControlFlow\\Module3_ControlFlow.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module3_controlflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2535A9BB-2A89-CE90-CCED-2B648991CD96}|Module3_ControlFlow\\Module3_ControlFlow.csproj|solutionrelative:module3_controlflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{422823C0-7083-FB8A-C208-03DC0EB62E43}|Module2_CSharpBasics\\Module2_CSharpBasics.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module2_csharpbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{422823C0-7083-FB8A-C208-03DC0EB62E43}|Module2_CSharpBasics\\Module2_CSharpBasics.csproj|solutionrelative:module2_csharpbasics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B43644B-6C06-A8FD-29EA-7F82DD749EF2}|Module1_IntroToCSharp\\Module1_IntroToCSharp.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\module1_introtocsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B43644B-6C06-A8FD-29EA-7F82DD749EF2}|Module1_IntroToCSharp\\Module1_IntroToCSharp.csproj|solutionrelative:module1_introtocsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72A9BC5F-B531-4F99-B41C-B35ACD286122}|CSharpHelloWorld\\CSharpHelloWorld.csproj|c:\\git\\csci316professionalsoftwaredevelopment\\csci316professionalsoftwaredevelopment\\csharphelloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72A9BC5F-B531-4F99-B41C-B35ACD286122}|CSharpHelloWorld\\CSharpHelloWorld.csproj|solutionrelative:csharphelloworld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Module11_UnitTesting.Tests",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module11_UnitTesting.Tests\\Module11_UnitTesting.Tests.csproj",
+              "RelativeDocumentMoniker": "Module11_UnitTesting.Tests\\Module11_UnitTesting.Tests.csproj",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module11_UnitTesting.Tests\\Module11_UnitTesting.Tests.csproj",
+              "RelativeToolTip": "Module11_UnitTesting.Tests\\Module11_UnitTesting.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-26T02:22:05.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculatorTests.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module11_UnitTesting.Tests\\CalculatorTests.cs",
+              "RelativeDocumentMoniker": "Module11_UnitTesting.Tests\\CalculatorTests.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module11_UnitTesting.Tests\\CalculatorTests.cs",
+              "RelativeToolTip": "Module11_UnitTesting.Tests\\CalculatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T02:19:57.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module11_UnitTesting\\Program.cs",
+              "RelativeDocumentMoniker": "Module11_UnitTesting\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module11_UnitTesting\\Program.cs",
+              "RelativeToolTip": "Module11_UnitTesting\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T02:03:18.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module9_LINQ\\Program.cs",
+              "RelativeDocumentMoniker": "Module9_LINQ\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module9_LINQ\\Program.cs",
+              "RelativeToolTip": "Module9_LINQ\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:27:38.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module8_FileIO\\Program.cs",
+              "RelativeDocumentMoniker": "Module8_FileIO\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module8_FileIO\\Program.cs",
+              "RelativeToolTip": "Module8_FileIO\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:27:02.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module5_OOP\\Program.cs",
+              "RelativeDocumentMoniker": "Module5_OOP\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module5_OOP\\Program.cs",
+              "RelativeToolTip": "Module5_OOP\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:07:14.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module7_ExceptionHandling\\Program.cs",
+              "RelativeDocumentMoniker": "Module7_ExceptionHandling\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module7_ExceptionHandling\\Program.cs",
+              "RelativeToolTip": "Module7_ExceptionHandling\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:22:12.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module6_Collections\\Program.cs",
+              "RelativeDocumentMoniker": "Module6_Collections\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module6_Collections\\Program.cs",
+              "RelativeToolTip": "Module6_Collections\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:16:58.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module4_Methods\\Program.cs",
+              "RelativeDocumentMoniker": "Module4_Methods\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module4_Methods\\Program.cs",
+              "RelativeToolTip": "Module4_Methods\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:05:58.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module3_ControlFlow\\Program.cs",
+              "RelativeDocumentMoniker": "Module3_ControlFlow\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module3_ControlFlow\\Program.cs",
+              "RelativeToolTip": "Module3_ControlFlow\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:02:46.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module2_CSharpBasics\\Program.cs",
+              "RelativeDocumentMoniker": "Module2_CSharpBasics\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module2_CSharpBasics\\Program.cs",
+              "RelativeToolTip": "Module2_CSharpBasics\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:01:20.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module1_IntroToCSharp\\Program.cs",
+              "RelativeDocumentMoniker": "Module1_IntroToCSharp\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\Module1_IntroToCSharp\\Program.cs",
+              "RelativeToolTip": "Module1_IntroToCSharp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:01:12.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\CSharpHelloWorld\\Program.cs",
+              "RelativeDocumentMoniker": "CSharpHelloWorld\\Program.cs",
+              "ToolTip": "C:\\Git\\CSCI316ProfessionalSoftwareDevelopment\\CSCI316ProfessionalSoftwareDevelopment\\CSharpHelloWorld\\Program.cs",
+              "RelativeToolTip": "CSharpHelloWorld\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T01:00:37.782Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

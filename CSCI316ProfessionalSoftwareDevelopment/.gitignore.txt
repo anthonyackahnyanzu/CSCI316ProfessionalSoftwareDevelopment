@@ -1,0 +1,33 @@
+# Visual Studio / .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Rider / JetBrains
+*.iml
+*.ipr
+*.iws
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# ASP.NET temporary files
+App_Data/
+*.log
+*.vspscc
+
+# OS generated files
+.DS_Store
+Thumbs.db

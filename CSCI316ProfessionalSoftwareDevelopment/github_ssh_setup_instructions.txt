@@ -1,0 +1,57 @@
+# GitHub SSH Setup Instructions (Windows, Git Bash)
+=================================================
+
+## 1. Create the .ssh folder (if missing)
+In Git Bash:
+    mkdir -p ~/.ssh
+
+## 2. Generate a new SSH key
+Run in Git Bash (replace with your GitHub email):
+    ssh-keygen -t ed25519 -C "anthony.ackahnyanzu@principia.edu"
+
+- Press Enter to accept the default file location (~/.ssh/id_ed25519)
+- Optionally add a passphrase for extra security
+
+## 3. Start the SSH agent
+Run:
+    eval "$(ssh-agent -s)"
+
+Then add your key:
+    ssh-add ~/.ssh/id_ed25519
+
+## 4. Add your public key to GitHub
+Show your public key:
+    cat ~/.ssh/id_ed25519.pub
+
+Copy the full line (starts with ssh-ed25519) and add it to GitHub:
+- Go to GitHub → Settings → SSH and GPG keys → New SSH key
+- Paste the key and save
+
+## 5. Test the connection
+Run:
+    ssh -T git@github.com
+
+You should see:
+    Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+
+=================================================
+# Option 1: Automatically load your SSH key in Git Bash
+=================================================
+
+1. Open Git Bash.
+2. Edit your Git Bash profile:
+       nano ~/.bashrc
+3. Add these lines to the end of the file:
+
+    eval "$(ssh-agent -s)" >/dev/null 2>&1
+    ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1
+
+4. Save and exit (CTRL+O, Enter, CTRL+X).
+5. Close and reopen Git Bash.
+6. Verify your key is loaded:
+       ssh-add -l
+
+You should see your SSH key fingerprint listed.
+
+=================================================
+Done! Your SSH key will now load automatically every time you open Git Bash.
