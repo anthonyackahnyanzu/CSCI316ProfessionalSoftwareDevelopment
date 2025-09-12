@@ -1,0 +1,51 @@
+@CSharpWebApiBasics_HostAddress = http://localhost:5241
+
+GET {{CSharpWebApiBasics_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+# Example: Get all products from the file
+GET {{CSharpWebApiBasics_HostAddress}}/api/ProductsFile
+Accept: application/json
+
+###
+
+# Example: Add a new product to the file
+POST {{CSharpWebApiBasics_HostAddress}}/api/ProductsFile
+Content-Type: application/json
+
+{
+  "name": "Orange",
+  "price": 1.25
+}
+
+###
+
+# Example: Update an existing product in the file
+PUT {{CSharpWebApiBasics_HostAddress}}/api/ProductsFile/1
+Content-Type: application/json
+
+{
+  "name": "Updated Orange",
+  "price": 1.50
+}
+
+###
+
+# Example: Delete a product from the file
+DELETE {{CSharpWebApiBasics_HostAddress}}/api/ProductsFile/1
+
+###
+
+# Example: Echo a product object
+POST {{CSharpWebApiBasics_HostAddress}}/api/ProductsFile/echo
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Test Product",
+  "price": 2.99
+}
+
+###

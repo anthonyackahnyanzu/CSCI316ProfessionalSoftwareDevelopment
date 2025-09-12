@@ -1,0 +1,46 @@
+SQL Server Quick Three-Hour Class Topics
+========================================
+
+1. Introduction to SQL Server
+   - What is SQL Server?
+   - Editions and installation basics
+   - SQL Server Management Studio (SSMS)
+
+2. Database Fundamentals
+   - Databases, tables, and schemas
+   - Data types and constraints
+   - Primary keys and foreign keys
+
+3. Basic SQL Queries
+   - SELECT statements
+   - Filtering data with WHERE
+   - Sorting results with ORDER BY
+   - Limiting results with TOP
+
+4. Data Manipulation
+   - INSERT, UPDATE, DELETE
+   - Transactions and rollback
+
+5. Joins and Relationships
+   - INNER JOIN, LEFT JOIN, RIGHT JOIN
+   - Understanding relationships between tables
+
+6. Aggregation and Grouping
+   - GROUP BY and HAVING
+   - Aggregate functions (COUNT, SUM, AVG, MIN, MAX)
+
+7. Indexes and Performance
+   - What are indexes?
+   - How indexes improve query performance
+
+8. Security Basics
+   - Users, roles, and permissions
+   - Authentication and authorization
+
+9. Backup and Restore
+   - Creating backups
+   - Restoring databases
+
+10. Q&A and Hands-on Practice
+   - Practice writing queries
+   - Troubleshooting common issues

@@ -1,0 +1,49 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  // IIS and application launch settings for debugging and running the project
+  "iisSettings": {
+    "windowsAuthentication": false, // Disable Windows authentication
+    "anonymousAuthentication": true, // Enable anonymous authentication
+    "iisExpress": {
+      "applicationUrl": "http://localhost:25400", // IIS Express application URL
+      "sslPort": 44362 // IIS Express SSL port
+    }
+  },
+  "profiles": {
+    // Profile for HTTP launch
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5241",
+      "environmentVariables": {
+        // Sets the environment to Development
+        "ASPNETCORE_ENVIRONMENT": "Development"
+        // You can add PRODUCTS_FILE_PATH here to override the products file location
+      }
+    },
+    // Profile for HTTPS launch
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7158;http://localhost:5241",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+        // You can add PRODUCTS_FILE_PATH here to override the products file location
+      }
+    },
+    // Profile for IIS Express
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+        // You can add PRODUCTS_FILE_PATH here to override the products file location
+      }
+    }
+  }
+}

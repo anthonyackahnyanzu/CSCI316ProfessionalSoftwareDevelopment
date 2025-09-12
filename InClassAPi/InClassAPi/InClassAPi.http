@@ -1,0 +1,6 @@
+@InClassAPi_HostAddress = http://localhost:5075
+
+GET {{InClassAPi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
