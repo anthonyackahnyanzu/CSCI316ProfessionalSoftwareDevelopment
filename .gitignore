@@ -32,3 +32,5 @@ products.json
 
 # Ignore Visual Studio folder
 .vs/
+*.dbmdl
+*.jfm

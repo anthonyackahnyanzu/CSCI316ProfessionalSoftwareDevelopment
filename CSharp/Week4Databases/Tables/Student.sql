@@ -1,0 +1,7 @@
+-- Student table
+CREATE TABLE Student (
+    StudentId INT PRIMARY KEY IDENTITY,
+    FirstName NVARCHAR(50) NOT NULL,
+    LastName NVARCHAR(50) NOT NULL,
+    Email NVARCHAR(100) NOT NULL UNIQUE
+);
