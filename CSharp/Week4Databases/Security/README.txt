@@ -1,0 +1,1 @@
+-- This folder is for database security objects (users, roles, permissions)
