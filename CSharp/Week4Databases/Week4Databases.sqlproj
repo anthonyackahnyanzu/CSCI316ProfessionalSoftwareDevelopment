@@ -68,6 +68,7 @@
     <Build Include="InsertSampleData.sql" />
     <Build Include="Scripts\InsertSampleData.sql" />
     <Build Include="Scripts\DeleteAllData.sql" />
+    <Build Include="CombinedTablesInsertsQuestions.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="QueryQuestions.txt" />
