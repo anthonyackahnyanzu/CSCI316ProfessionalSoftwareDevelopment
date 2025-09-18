@@ -56,6 +56,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week5ApiDesign", "Week5ApiD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5ApiDesign", "week5ApiDesign\Week5ApiDesign.csproj", "{DABB19E7-485C-3B78-7C54-0360C82A863A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StudentEnrollementProject", "StudentEnrollementProject", "{EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
