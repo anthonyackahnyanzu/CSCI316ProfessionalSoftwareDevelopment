@@ -52,6 +52,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Week4Databases", "Week4Databases\Week4Databases.sqlproj", "{70675936-E3EB-4346-9094-FF722EF209F5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week5ApiDesign", "Week5ApiDesign", "{CF727768-092B-4348-AD11-23CD78A15E99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5ApiDesign", "week5ApiDesign\Week5ApiDesign.csproj", "{DABB19E7-485C-3B78-7C54-0360C82A863A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -116,6 +120,10 @@ Global
 		{70675936-E3EB-4346-9094-FF722EF209F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70675936-E3EB-4346-9094-FF722EF209F5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{70675936-E3EB-4346-9094-FF722EF209F5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DABB19E7-485C-3B78-7C54-0360C82A863A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DABB19E7-485C-3B78-7C54-0360C82A863A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DABB19E7-485C-3B78-7C54-0360C82A863A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DABB19E7-485C-3B78-7C54-0360C82A863A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +143,7 @@ Global
 		{317E9B4B-9785-E3BD-94B9-4459EBB6A01E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{D94A13B1-85F6-2475-318A-2AC38C26D207} = {4F20CC9D-4E4E-4627-B24F-472ABAEFCF32}
 		{70675936-E3EB-4346-9094-FF722EF209F5} = {3A1549EA-7C4E-478D-8466-300B05B54769}
+		{DABB19E7-485C-3B78-7C54-0360C82A863A} = {CF727768-092B-4348-AD11-23CD78A15E99}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EABD4162-E558-49CC-86DA-6062E2FCF2E2}
