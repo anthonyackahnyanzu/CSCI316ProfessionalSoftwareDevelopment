@@ -50,6 +50,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\.gitignore = ..\.gitignore
 	EndProjectSection
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Week4Databases", "Week4Databases\Week4Databases.sqlproj", "{70675936-E3EB-4346-9094-FF722EF209F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,6 +110,12 @@ Global
 		{D94A13B1-85F6-2475-318A-2AC38C26D207}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D94A13B1-85F6-2475-318A-2AC38C26D207}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D94A13B1-85F6-2475-318A-2AC38C26D207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70675936-E3EB-4346-9094-FF722EF209F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70675936-E3EB-4346-9094-FF722EF209F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70675936-E3EB-4346-9094-FF722EF209F5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70675936-E3EB-4346-9094-FF722EF209F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70675936-E3EB-4346-9094-FF722EF209F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70675936-E3EB-4346-9094-FF722EF209F5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,6 +134,7 @@ Global
 		{1E806149-3E9F-E677-2038-221052EF3B25} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{317E9B4B-9785-E3BD-94B9-4459EBB6A01E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{D94A13B1-85F6-2475-318A-2AC38C26D207} = {4F20CC9D-4E4E-4627-B24F-472ABAEFCF32}
+		{70675936-E3EB-4346-9094-FF722EF209F5} = {3A1549EA-7C4E-478D-8466-300B05B54769}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EABD4162-E558-49CC-86DA-6062E2FCF2E2}
