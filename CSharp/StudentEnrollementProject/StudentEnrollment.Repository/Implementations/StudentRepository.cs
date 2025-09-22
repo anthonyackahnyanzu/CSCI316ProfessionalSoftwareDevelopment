@@ -2,12 +2,11 @@ using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 using Dapper;
-using StudentEnrollentReposiotry.Entities;
-using StudentEnrollentReposiotry.Interfaces;
+using StudentEnrollment.Repository.Entities;
+using StudentEnrollment.Repository.Interfaces;
 
-namespace StudentEnrollentReposiotry.Implementations
+namespace StudentEnrollment.Repository.Implementations
 {
-    // Example implementation for StudentRepository using Dapper
     public class StudentRepository : IStudentRepository
     {
         private readonly IDbConnection _db;
@@ -28,6 +27,4 @@ namespace StudentEnrollentReposiotry.Implementations
         public async Task<int> DeleteAsync(int id) =>
             await _db.ExecuteAsync("DELETE FROM Student WHERE StudentId = @id", new { id });
     }
-
-    // Similar Dapper implementations should be created for other repositories
 }

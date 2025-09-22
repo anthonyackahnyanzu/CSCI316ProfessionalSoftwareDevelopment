@@ -58,4 +58,15 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\ClassOffering.sql" />
+    <Build Include="Tables\Classroom.sql" />
+    <Build Include="Tables\Course.sql" />
+    <Build Include="Tables\DatabaseTables.sql" />
+    <Build Include="Tables\Department.sql" />
+    <Build Include="Tables\Enrollment.sql" />
+    <Build Include="Tables\Professor.sql" />
+    <Build Include="Tables\Semester.sql" />
+    <Build Include="Tables\Student.sql" />
+  </ItemGroup>
 </Project>

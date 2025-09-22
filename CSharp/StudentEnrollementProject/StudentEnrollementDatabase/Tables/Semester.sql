@@ -1,6 +1,0 @@
-CREATE TABLE Semester (
-    SemesterId INT PRIMARY KEY IDENTITY,
-    Name NVARCHAR(50) NOT NULL,
-    StartDate DATE NOT NULL,
-    EndDate DATE NOT NULL
-);

@@ -58,13 +58,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5ApiDesign", "week5ApiD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StudentEnrollementProject", "StudentEnrollementProject", "{EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "StudentEnrollment.Database", "StudentEnrollementProject\StudentEnrollment.Database\StudentEnrollment.Database.sqlproj", "{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnrollment.Repository", "StudentEnrollment.Repository\StudentEnrollment.Repository.csproj", "{157F621E-F04E-4CC2-82D8-7D18820C052D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnrollment.Service", "StudentEnrollementProject\StudentEnrollment.Service\StudentEnrollment.Service.csproj", "{28C20BCF-BA87-4DC1-9C35-BECD03E820B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnrollment.Api", "StudentEnrollementProject\StudentEnrollment.Api\StudentEnrollment.Api.csproj", "{0F606D1A-9F72-4A9F-9F54-1AB2F59F843E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnrollment.Repository", "StudentEnrollementProject\StudentEnrollment.Repository\StudentEnrollment.Repository.csproj", "{134B0A35-02FC-9428-5EAF-17FBF14911BE}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "StudentEnrollment.Database", "StudentEnrollementProject\StudentEnrollment.Database\StudentEnrollment.Database.sqlproj", "{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -134,16 +134,6 @@ Global
 		{DABB19E7-485C-3B78-7C54-0360C82A863A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DABB19E7-485C-3B78-7C54-0360C82A863A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DABB19E7-485C-3B78-7C54-0360C82A863A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{157F621E-F04E-4CC2-82D8-7D18820C052D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{157F621E-F04E-4CC2-82D8-7D18820C052D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{157F621E-F04E-4CC2-82D8-7D18820C052D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{157F621E-F04E-4CC2-82D8-7D18820C052D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{28C20BCF-BA87-4DC1-9C35-BECD03E820B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{28C20BCF-BA87-4DC1-9C35-BECD03E820B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28C20BCF-BA87-4DC1-9C35-BECD03E820B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -152,6 +142,16 @@ Global
 		{0F606D1A-9F72-4A9F-9F54-1AB2F59F843E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F606D1A-9F72-4A9F-9F54-1AB2F59F843E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F606D1A-9F72-4A9F-9F54-1AB2F59F843E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{134B0A35-02FC-9428-5EAF-17FBF14911BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134B0A35-02FC-9428-5EAF-17FBF14911BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134B0A35-02FC-9428-5EAF-17FBF14911BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134B0A35-02FC-9428-5EAF-17FBF14911BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,10 +172,10 @@ Global
 		{D94A13B1-85F6-2475-318A-2AC38C26D207} = {4F20CC9D-4E4E-4627-B24F-472ABAEFCF32}
 		{70675936-E3EB-4346-9094-FF722EF209F5} = {3A1549EA-7C4E-478D-8466-300B05B54769}
 		{DABB19E7-485C-3B78-7C54-0360C82A863A} = {CF727768-092B-4348-AD11-23CD78A15E99}
-		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC} = {EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}
-		{157F621E-F04E-4CC2-82D8-7D18820C052D} = {EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}
 		{28C20BCF-BA87-4DC1-9C35-BECD03E820B0} = {EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}
 		{0F606D1A-9F72-4A9F-9F54-1AB2F59F843E} = {EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}
+		{134B0A35-02FC-9428-5EAF-17FBF14911BE} = {EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}
+		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC} = {EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EABD4162-E558-49CC-86DA-6062E2FCF2E2}

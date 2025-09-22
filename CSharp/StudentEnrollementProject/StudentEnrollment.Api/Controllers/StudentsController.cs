@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using StudentEnrollmentService;
+using StudentEnrollment.Service.Services;
 using System.Threading.Tasks;
 
-namespace StudentEnrollmentApi.Controllers
+namespace StudentEnrollment.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -14,7 +14,6 @@ namespace StudentEnrollmentApi.Controllers
             _studentService = studentService;
         }
 
-        // GET: api/students
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -22,6 +21,12 @@ namespace StudentEnrollmentApi.Controllers
             return Ok(students);
         }
 
-        // Additional routes for registration, class offerings, etc. can be added here
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var student = await _studentService.GetStudentByIdAsync(id);
+            if (student == null) return NotFound();
+            return Ok(student);
+        }
     }
 }

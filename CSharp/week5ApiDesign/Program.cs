@@ -28,7 +28,7 @@ namespace Week5ApiDesign
             Console.WriteLine();
 
             Console.WriteLine("Dependency Injection with AutoMapper:");
-            DependencyInjectionDemo.RunDemo();
+            DependencyInversionDemo.RunDemo();
             Console.WriteLine();
 
             Console.WriteLine("Dependency Injection with Interface and Microsoft DI:");
