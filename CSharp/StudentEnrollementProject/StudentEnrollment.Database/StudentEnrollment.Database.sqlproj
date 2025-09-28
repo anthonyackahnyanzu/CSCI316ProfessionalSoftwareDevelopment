@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>Week4Databases</Name>
+    <Name>StudentEnrollment.Database</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{70675936-e3eb-4346-9094-ff722ef209f5}</ProjectGuid>
+    <ProjectGuid>{0c1d925e-ea98-4fa7-891b-34fbeed43dbc}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>Week4Databases</RootNamespace>
-    <AssemblyName>Week4Databases</AssemblyName>
+    <RootNamespace>StudentEnrollment.Database</RootNamespace>
+    <AssemblyName>StudentEnrollment.Database</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -57,23 +57,16 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
-    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
+    <Build Include="Tables\ClassOffering.sql" />
     <Build Include="Tables\Classroom.sql" />
     <Build Include="Tables\Course.sql" />
+    <None Include="Tables\DatabaseTables.sql" />
+    <Build Include="Tables\Department.sql" />
     <Build Include="Tables\Enrollment.sql" />
+    <Build Include="Tables\Professor.sql" />
+    <Build Include="Tables\Semester.sql" />
     <Build Include="Tables\Student.sql" />
-    <None Include="DeleteAllData.sql" />
-    <None Include="InsertSampleData.sql" />
-    <None Include="Scripts\InsertSampleData.sql" />
-    <None Include="Scripts\DeleteAllData.sql" />
-    <None Include="CombinedTablesInsertsQuestions.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="QueryQuestions.txt" />
-    <None Include="QueryAnswers.txt" />
-    <None Include="Scripts\QueryQuestions.txt" />
-    <None Include="Scripts\QueryAnswers.txt" />
   </ItemGroup>
 </Project>
