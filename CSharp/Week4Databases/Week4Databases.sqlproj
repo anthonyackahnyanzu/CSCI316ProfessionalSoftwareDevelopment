@@ -64,11 +64,11 @@
     <Build Include="Tables\Course.sql" />
     <Build Include="Tables\Enrollment.sql" />
     <Build Include="Tables\Student.sql" />
-    <Build Include="DeleteAllData.sql" />
-    <Build Include="InsertSampleData.sql" />
-    <Build Include="Scripts\InsertSampleData.sql" />
-    <Build Include="Scripts\DeleteAllData.sql" />
-    <Build Include="CombinedTablesInsertsQuestions.sql" />
+    <None Include="DeleteAllData.sql" />
+    <None Include="InsertSampleData.sql" />
+    <None Include="Scripts\InsertSampleData.sql" />
+    <None Include="Scripts\DeleteAllData.sql" />
+    <None Include="CombinedTablesInsertsQuestions.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="QueryQuestions.txt" />

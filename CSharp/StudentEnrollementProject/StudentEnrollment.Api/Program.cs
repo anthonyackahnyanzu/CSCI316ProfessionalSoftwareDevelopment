@@ -4,10 +4,10 @@ using StudentEnrollment.Repository.Interfaces;
 using StudentEnrollment.Service.Services;
 using StudentEnrollment.Service.Mapping;
 using StudentEnrollment.Api.Settings;
-using System.Data.SqlClient;
 using AutoMapper;
 using System.Data;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +16,11 @@ builder.Services.Configure<DatabaseSettings>(
     builder.Configuration.GetSection("ConnectionStrings"));
 
 // Register AutoMapper
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+// Replace this line:
+// builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+// With this line:
+builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
 
 // Register Dapper IDbConnection using IOptions
 builder.Services.AddScoped<IDbConnection>(sp =>

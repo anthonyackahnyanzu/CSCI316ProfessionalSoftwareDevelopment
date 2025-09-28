@@ -66,6 +66,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnrollment.Repositor
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "StudentEnrollment.Database", "StudentEnrollementProject\StudentEnrollment.Database\StudentEnrollment.Database.sqlproj", "{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week6AuthNAuthZ", "Week6AuthNAuthZ", "{2A0CBB95-D683-4359-98F8-E04CF98823E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

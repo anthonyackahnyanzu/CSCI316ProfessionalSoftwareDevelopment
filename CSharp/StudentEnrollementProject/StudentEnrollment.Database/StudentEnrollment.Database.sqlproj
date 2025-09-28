@@ -62,7 +62,7 @@
     <Build Include="Tables\ClassOffering.sql" />
     <Build Include="Tables\Classroom.sql" />
     <Build Include="Tables\Course.sql" />
-    <Build Include="Tables\DatabaseTables.sql" />
+    <None Include="Tables\DatabaseTables.sql" />
     <Build Include="Tables\Department.sql" />
     <Build Include="Tables\Enrollment.sql" />
     <Build Include="Tables\Professor.sql" />
