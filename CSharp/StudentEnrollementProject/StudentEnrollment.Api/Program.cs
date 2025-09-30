@@ -8,6 +8,8 @@ using AutoMapper;
 using System.Data;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Data.SqlClient;
+using StudentEnrollment.Service.Interfaces;
+using StudentEnrollment.Service.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,9 +31,15 @@ builder.Services.AddScoped<IDbConnection>(sp =>
     return new SqlConnection(dbSettings.DefaultConnection);
 });
 
-// Register repositories and services
+// Register repositories
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddTransient<ICourseDepartmentRepository, CourseDepartmentRepository>();
+builder.Services.AddTransient<IEnrollmentOfferingSemesterRepository, EnrollmentOfferingSemesterRepository>();
 builder.Services.AddScoped<StudentService>();
+
+// Register services
+builder.Services.AddScoped<ICourseDepartmentService, CourseDepartmentService>();
+builder.Services.AddTransient<IEnrollmentOfferingSemesterService, EnrollmentOfferingSemesterService>();
 
 // Add services to the container.
 
