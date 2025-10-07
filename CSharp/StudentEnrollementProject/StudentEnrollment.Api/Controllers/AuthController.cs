@@ -1,6 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using StudentEnrollment.Api.Settings;
 using StudentEnrollment.Service.Interfaces;
 using StudentEnrollment.Service.Models;
 using System.Threading.Tasks;
@@ -12,18 +10,16 @@ namespace StudentEnrollment.Api.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
-        private readonly JwtSettings _jwtSettings;
-        public AuthController(IAuthService authService, IOptions<JwtSettings> jwtOptions)
+        public AuthController(IAuthService authService)
         {
             _authService = authService;
-            _jwtSettings = jwtOptions.Value;
         }
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             var token = await _authService.AuthenticateAsync(model.Username, model.Password);
-            if (token == null) return Unauthorized();
+            if (token == null) return Unauthorized("Invalid username or password, or your role is not approved.");
             return Ok(new { token });
         }
 
@@ -31,8 +27,8 @@ namespace StudentEnrollment.Api.Controllers
         public async Task<IActionResult> Register([FromBody] UserRegisterModel model)
         {
             var success = await _authService.RegisterAsync(model);
-            if (!success) return BadRequest("Registration failed.");
-            return Ok("User registered.");
+            if (!success) return BadRequest("Registration failed. Username might already be taken.");
+            return Ok("Registration successful. Please wait for admin approval to activate your role.");
         }
     }
 }

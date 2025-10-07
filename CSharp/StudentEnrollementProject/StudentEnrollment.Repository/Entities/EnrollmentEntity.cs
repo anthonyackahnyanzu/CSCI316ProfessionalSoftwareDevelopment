@@ -1,5 +1,3 @@
-using System;
-
 namespace StudentEnrollment.Repository.Entities
 {
     public class EnrollmentEntity

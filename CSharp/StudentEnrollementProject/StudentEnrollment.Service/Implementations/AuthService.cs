@@ -3,16 +3,16 @@ using StudentEnrollment.Service.Models;
 using StudentEnrollment.Repository.Interfaces;
 using StudentEnrollment.Repository.Entities;
 using Microsoft.Extensions.Options;
-using StudentEnrollment.Api.Settings;
-using System.Threading.Tasks;
+using StudentEnrollment.Service.Settings;
 using System.Security.Cryptography;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using System;
 using System.Linq;
-using System.Security.Claims;
 
 namespace StudentEnrollment.Service.Implementations
 {
@@ -33,7 +33,11 @@ namespace StudentEnrollment.Service.Implementations
             if (user == null || !VerifyPassword(password, user.PasswordHash))
                 return null;
 
-            var roles = await _userRepo.GetUserRolesAsync(user.UserId);
+            // Ensure user has at least one approved role
+            var approvedRoles = await _userRepo.GetUserRolesAsync(user.UserId, onlyApproved: true);
+            if (!approvedRoles.Any())
+                return null;
+
             var permissions = await _userRepo.GetUserPermissionsAsync(user.UserId);
 
             var claims = new List<Claim>
@@ -41,7 +45,7 @@ namespace StudentEnrollment.Service.Implementations
                 new Claim(ClaimTypes.Name, user.Username),
                 new Claim(ClaimTypes.Email, user.Email)
             };
-            claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
+            claims.AddRange(approvedRoles.Select(r => new Claim(ClaimTypes.Role, r)));
             claims.AddRange(permissions.Select(p => new Claim("permission", p)));
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
@@ -65,9 +69,13 @@ namespace StudentEnrollment.Service.Implementations
                 PasswordHash = HashPassword(model.Password)
             };
             var result = await _userRepo.AddAsync(user);
-            // Assign role to user
-            // You would also insert into UserRole table here (not shown for brevity)
-            return result > 0;
+            if (result > 0)
+            {
+                // Assign role to user with ApprovalStatusId = 1 (Pending)
+                await _userRepo.AddUserRoleAsync(user.UserId, model.RoleId, 1);
+                return true;
+            }
+            return false;
         }
 
         private string HashPassword(string password)

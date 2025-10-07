@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StudentEnrollment.Service.Services;
-using System.Threading.Tasks;
 
 namespace StudentEnrollment.Api.Controllers
 {

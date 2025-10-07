@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StudentEnrollment.Service.Interfaces;
 using StudentEnrollment.Service.Models;
-using System.Threading.Tasks;
 
 namespace StudentEnrollment.Api.Controllers
 {

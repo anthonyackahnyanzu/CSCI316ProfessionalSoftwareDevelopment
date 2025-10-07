@@ -7,8 +7,8 @@ using StudentEnrollment.Service.Implementations;
 using StudentEnrollment.Service.Interfaces;
 using StudentEnrollment.Service.Mapping;
 using StudentEnrollment.Api.Settings;
-using System.Data.SqlClient;
-using AutoMapper;
+using Microsoft.Data.SqlClient;
+using StudentEnrollment.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +21,10 @@ builder.Services.Configure<JwtSettings>(
     builder.Configuration.GetSection("Jwt"));
 
 // Register AutoMapper
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddProfile<MappingProfile>();
+});
 
 // Register Dapper IDbConnection using IOptions
 builder.Services.AddScoped<System.Data.IDbConnection>(sp =>
@@ -78,6 +81,7 @@ builder.Services.AddAuthorization(options =>
 });
 
 builder.Services.AddControllers();
+builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())

@@ -1,6 +1,5 @@
 using System.Text.Json;
 using CSharpWebApiBasics.Models;
-using Microsoft.Extensions.Configuration;
 
 namespace CSharpWebApiBasics.Helpers
 {
