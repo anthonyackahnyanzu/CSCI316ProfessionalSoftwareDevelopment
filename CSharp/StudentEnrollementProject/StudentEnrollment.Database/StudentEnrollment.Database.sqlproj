@@ -57,6 +57,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\ClassOffering.sql" />
@@ -68,5 +69,14 @@
     <Build Include="Tables\Professor.sql" />
     <Build Include="Tables\Semester.sql" />
     <Build Include="Tables\Student.sql" />
+    <Build Include="Tables\Permission.sql" />
+    <Build Include="Tables\Role.sql" />
+    <Build Include="Tables\RolePermission.sql" />
+    <Build Include="Tables\User.sql" />
+    <Build Include="Tables\UserPermission.sql" />
+    <Build Include="Tables\UserRole.sql" />
+    <None Include="Scripts\InsertRolesPermissions.sql" />
+    <Build Include="Tables\ApprovalStatus.sql" />
+    <None Include="Scripts\InsertApprovalStatus.sql" />
   </ItemGroup>
 </Project>

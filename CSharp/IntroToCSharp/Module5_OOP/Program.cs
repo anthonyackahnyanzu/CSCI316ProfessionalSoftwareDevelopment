@@ -2,7 +2,6 @@
 // Demonstrates a simple class and object usage.
 using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Linq;
 
 class Person

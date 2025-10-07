@@ -2,9 +2,7 @@ using Dapper;
 using StudentEnrollment.Repository.Entities;
 using StudentEnrollment.Repository.Interfaces;
 using StudentEnrollment.Repository.Sql;
-using System.Collections.Generic;
 using System.Data;
-using System.Threading.Tasks;
 
 namespace StudentEnrollment.Repository.Implementations
 {

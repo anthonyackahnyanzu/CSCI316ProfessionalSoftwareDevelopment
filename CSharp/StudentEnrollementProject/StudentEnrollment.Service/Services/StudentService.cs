@@ -1,8 +1,6 @@
 using AutoMapper;
 using StudentEnrollment.Repository.Interfaces;
 using StudentEnrollment.Service.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace StudentEnrollment.Service.Services
 {

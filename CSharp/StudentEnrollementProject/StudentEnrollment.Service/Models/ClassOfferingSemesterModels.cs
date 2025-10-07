@@ -1,5 +1,3 @@
-using System;
-
 namespace StudentEnrollment.Service.Models
 {
     public class ClassOfferingModel

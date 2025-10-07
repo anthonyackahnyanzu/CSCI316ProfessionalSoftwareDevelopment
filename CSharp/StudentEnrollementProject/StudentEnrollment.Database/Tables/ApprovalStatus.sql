@@ -1,0 +1,4 @@
+CREATE TABLE [ApprovalStatus] (
+    Id INT PRIMARY KEY IDENTITY,
+    Name NVARCHAR(50) NOT NULL UNIQUE
+);
