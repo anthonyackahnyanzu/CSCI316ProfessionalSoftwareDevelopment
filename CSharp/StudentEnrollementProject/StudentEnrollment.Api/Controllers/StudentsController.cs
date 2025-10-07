@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StudentEnrollment.Service.Services;
 using System.Threading.Tasks;
@@ -14,7 +15,9 @@ namespace StudentEnrollment.Api.Controllers
             _studentService = studentService;
         }
 
+        // GET: api/students
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAll()
         {
             var students = await _studentService.GetAllStudentsAsync();

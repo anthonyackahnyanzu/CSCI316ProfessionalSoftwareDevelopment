@@ -1,13 +1,14 @@
-using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using StudentEnrollment.Repository.Implementations;
 using StudentEnrollment.Repository.Interfaces;
-using StudentEnrollment.Service.Services;
+using StudentEnrollment.Service.Implementations;
+using StudentEnrollment.Service.Interfaces;
 using StudentEnrollment.Service.Mapping;
 using StudentEnrollment.Api.Settings;
+using System.Data.SqlClient;
 using AutoMapper;
-using System.Data;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,34 +16,70 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<DatabaseSettings>(
     builder.Configuration.GetSection("ConnectionStrings"));
 
-// Register AutoMapper
-// Replace this line:
-// builder.Services.AddAutoMapper(typeof(MappingProfile));
+// Bind JwtSettings from appsettings.json
+builder.Services.Configure<JwtSettings>(
+    builder.Configuration.GetSection("Jwt"));
 
-// With this line:
-builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
+// Register AutoMapper
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // Register Dapper IDbConnection using IOptions
-builder.Services.AddScoped<IDbConnection>(sp =>
+builder.Services.AddScoped<System.Data.IDbConnection>(sp =>
 {
-    var dbSettings = sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
+    var dbSettings = sp.GetRequiredService<Microsoft.Extensions.Options.IOptions<DatabaseSettings>>().Value;
     return new SqlConnection(dbSettings.DefaultConnection);
 });
 
 // Register repositories and services
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<ICourseDepartmentRepository, CourseDepartmentRepository>();
+builder.Services.AddScoped<IEnrollmentOfferingSemesterRepository, EnrollmentOfferingSemesterRepository>();
+builder.Services.AddScoped<IEnrollmentOfferingSemesterService, EnrollmentOfferingSemesterService>();
+builder.Services.AddScoped<ICourseDepartmentService, CourseDepartmentService>();
 builder.Services.AddScoped<StudentService>();
+// Register AuthService and UserRepository for authentication
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
-// Add services to the container.
+// JWT Authentication setup
+var jwtSection = builder.Configuration.GetSection("Jwt");
+var jwtKey = jwtSection["Key"];
+var issuer = jwtSection["Issuer"];
+var audience = jwtSection["Audience"];
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = issuer,
+        ValidAudience = audience,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+    };
+});
+
+// Claims-based authorization policies
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("CanRegister", policy => policy.RequireClaim("permission", "CanRegister"));
+    options.AddPolicy("CanViewSchedule", policy => policy.RequireClaim("permission", "CanViewSchedule"));
+    options.AddPolicy("CanManageClasses", policy => policy.RequireClaim("permission", "CanManageClasses"));
+    options.AddPolicy("CanManageUsers", policy => policy.RequireClaim("permission", "CanManageUsers"));
+    options.AddPolicy("CanEditCourses", policy => policy.RequireClaim("permission", "CanEditCourses"));
+    options.AddPolicy("FullAccess", policy => policy.RequireClaim("permission", "FullAccess"));
+});
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -50,9 +87,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StudentEnrollment.Service.Interfaces;
 using StudentEnrollment.Service.Models;
@@ -17,10 +18,12 @@ namespace StudentEnrollment.Api.Controllers
 
         // Enrollment CRUD
         [HttpGet("enrollments")]
+        [Authorize(Policy = "CanViewSchedule")]
         public async Task<IActionResult> GetAllEnrollments() =>
             Ok(await _service.GetAllEnrollmentsAsync());
 
         [HttpGet("enrollments/{id}")]
+        [Authorize(Policy = "CanViewSchedule")]
         public async Task<IActionResult> GetEnrollmentById(int id)
         {
             var enrollment = await _service.GetEnrollmentByIdAsync(id);
@@ -29,6 +32,7 @@ namespace StudentEnrollment.Api.Controllers
         }
 
         [HttpPost("enrollments")]
+        [Authorize(Policy = "CanRegister")]
         public async Task<IActionResult> AddEnrollment([FromBody] EnrollmentModel enrollment)
         {
             var result = await _service.AddEnrollmentAsync(enrollment);
@@ -36,6 +40,7 @@ namespace StudentEnrollment.Api.Controllers
         }
 
         [HttpPut("enrollments/{id}")]
+        [Authorize(Policy = "CanManageClasses")]
         public async Task<IActionResult> UpdateEnrollment(int id, [FromBody] EnrollmentModel enrollment)
         {
             enrollment.EnrollmentId = id;
@@ -44,6 +49,7 @@ namespace StudentEnrollment.Api.Controllers
         }
 
         [HttpDelete("enrollments/{id}")]
+        [Authorize(Policy = "CanManageUsers")]
         public async Task<IActionResult> DeleteEnrollment(int id)
         {
             var result = await _service.DeleteEnrollmentAsync(id);
@@ -52,10 +58,12 @@ namespace StudentEnrollment.Api.Controllers
 
         // ClassOffering CRUD
         [HttpGet("classofferings")]
+        [Authorize(Policy = "CanViewSchedule")]
         public async Task<IActionResult> GetAllClassOfferings() =>
             Ok(await _service.GetAllClassOfferingsAsync());
 
         [HttpGet("classofferings/{id}")]
+        [Authorize(Policy = "CanViewSchedule")]
         public async Task<IActionResult> GetClassOfferingById(int id)
         {
             var offering = await _service.GetClassOfferingByIdAsync(id);
@@ -64,6 +72,7 @@ namespace StudentEnrollment.Api.Controllers
         }
 
         [HttpPost("classofferings")]
+        [Authorize(Policy = "CanManageClasses")]
         public async Task<IActionResult> AddClassOffering([FromBody] ClassOfferingModel offering)
         {
             var result = await _service.AddClassOfferingAsync(offering);
@@ -71,6 +80,7 @@ namespace StudentEnrollment.Api.Controllers
         }
 
         [HttpPut("classofferings/{id}")]
+        [Authorize(Policy = "CanManageClasses")]
         public async Task<IActionResult> UpdateClassOffering(int id, [FromBody] ClassOfferingModel offering)
         {
             offering.ClassOfferingId = id;
@@ -79,6 +89,7 @@ namespace StudentEnrollment.Api.Controllers
         }
 
         [HttpDelete("classofferings/{id}")]
+        [Authorize(Policy = "CanManageUsers")]
         public async Task<IActionResult> DeleteClassOffering(int id)
         {
             var result = await _service.DeleteClassOfferingAsync(id);
@@ -87,10 +98,12 @@ namespace StudentEnrollment.Api.Controllers
 
         // Semester CRUD
         [HttpGet("semesters")]
+        [Authorize]
         public async Task<IActionResult> GetAllSemesters() =>
             Ok(await _service.GetAllSemestersAsync());
 
         [HttpGet("semesters/{id}")]
+        [Authorize]
         public async Task<IActionResult> GetSemesterById(int id)
         {
             var semester = await _service.GetSemesterByIdAsync(id);
@@ -99,6 +112,7 @@ namespace StudentEnrollment.Api.Controllers
         }
 
         [HttpPost("semesters")]
+        [Authorize(Policy = "FullAccess")]
         public async Task<IActionResult> AddSemester([FromBody] SemesterModel semester)
         {
             var result = await _service.AddSemesterAsync(semester);
@@ -106,6 +120,7 @@ namespace StudentEnrollment.Api.Controllers
         }
 
         [HttpPut("semesters/{id}")]
+        [Authorize(Policy = "FullAccess")]
         public async Task<IActionResult> UpdateSemester(int id, [FromBody] SemesterModel semester)
         {
             semester.SemesterId = id;
@@ -114,6 +129,7 @@ namespace StudentEnrollment.Api.Controllers
         }
 
         [HttpDelete("semesters/{id}")]
+        [Authorize(Policy = "FullAccess")]
         public async Task<IActionResult> DeleteSemester(int id)
         {
             var result = await _service.DeleteSemesterAsync(id);
