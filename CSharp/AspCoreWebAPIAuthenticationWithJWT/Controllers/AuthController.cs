@@ -53,7 +53,7 @@ namespace AspCoreWebAPIAuthenticationWithJWT.Controllers
                 new Claim("FullAccess", user.FullAccess.ToString().ToLower())
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("SuperSecretKeyForJwtToken123!"));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ADq/Q/xIudP1EeWwFixgSFn885kK1nXFR+zMr3FRISoeclJ5fX9sjkV11Krb2DXrqbX3LQV2LkxgfxiKsbNl/g=="));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var token = new JwtSecurityToken(
                 issuer: "AspCoreWebAPIAuthenticationWithJWT",
