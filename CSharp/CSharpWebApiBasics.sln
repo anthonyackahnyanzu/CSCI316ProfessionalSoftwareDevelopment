@@ -68,6 +68,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "StudentEnrollment.Database"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week6AuthNAuthZ", "Week6AuthNAuthZ", "{2A0CBB95-D683-4359-98F8-E04CF98823E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCoreWebAPIAuthenticationWithJWT", "AspCoreWebAPIAuthenticationWithJWT\AspCoreWebAPIAuthenticationWithJWT.csproj", "{F1590BB1-A0E3-48F9-A115-8050DA190E74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -154,6 +156,10 @@ Global
 		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F1590BB1-A0E3-48F9-A115-8050DA190E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1590BB1-A0E3-48F9-A115-8050DA190E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1590BB1-A0E3-48F9-A115-8050DA190E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1590BB1-A0E3-48F9-A115-8050DA190E74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -178,6 +184,7 @@ Global
 		{0F606D1A-9F72-4A9F-9F54-1AB2F59F843E} = {EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}
 		{134B0A35-02FC-9428-5EAF-17FBF14911BE} = {EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}
 		{0C1D925E-EA98-4FA7-891B-34FBEED43DBC} = {EBB5DC2E-4280-430F-BA19-90E8EBDE8BA2}
+		{F1590BB1-A0E3-48F9-A115-8050DA190E74} = {2A0CBB95-D683-4359-98F8-E04CF98823E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EABD4162-E558-49CC-86DA-6062E2FCF2E2}

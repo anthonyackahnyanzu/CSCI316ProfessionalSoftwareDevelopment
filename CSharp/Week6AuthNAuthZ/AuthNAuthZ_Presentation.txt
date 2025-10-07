@@ -1,0 +1,57 @@
+Authentication and Authorization in ASP.NET Core API
+====================================================
+
+1. **Authentication**
+   - Verifies the identity of a user or service.
+   - Common options in ASP.NET Core:
+     - Cookie Authentication: Stores user identity in browser cookies. Example: Traditional web login forms.
+     - OAuth2/OpenID Connect: Uses external providers for authentication. Example: Login with Google or Azure AD.
+     - JWT (JSON Web Token) Authentication: Uses signed tokens for stateless API authentication. Example: Mobile app sends JWT in Authorization header.
+     - API Key Authentication: Uses a static key for access. Example: Third-party service passes API key in request header.
+     - Windows Authentication: Uses Windows credentials for authentication. Example: Intranet apps using Active Directory.
+
+2. **Authorization**
+   - Determines what an authenticated user is allowed to do.
+   - Common approaches:
+     - Role-based Authorization: Grants access based on user roles. Example: Only users with "Admin" role can delete records.
+     - Policy-based Authorization: Uses custom rules for access. Example: Only users over 18 can access certain endpoints.
+     - Claims-based Authorization: Grants access based on user claims. Example: User with claim "CanEdit" can update data.
+
+3. **Why JWT Authentication for Our Project?**
+   - Stateless: No server-side session storage required.
+   - Scalable: Suitable for distributed/cloud environments.
+   - Widely supported: Works with many clients and platforms.
+   - Secure: Can be signed and optionally encrypted.
+   - Easy to use with ASP.NET Core middleware.
+
+4. **How JWT Authentication Works in ASP.NET Core**
+   - User logs in and receives a JWT token.
+   - Token is sent in the Authorization header for each API request.
+   - ASP.NET Core validates the token and sets the user context.
+   - Authorization policies/roles can be applied to endpoints.
+
+5. **Sample Middleware Registration**
+   ```csharp
+   builder.Services.AddAuthentication(options =>
+   {
+       options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+       options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+   })
+   .AddJwtBearer(options =>
+   {
+       options.TokenValidationParameters = new TokenValidationParameters
+       {
+           // Set validation options here
+       };
+   });
+   ```
+
+6. **Best Practices**
+   - Use HTTPS for all API traffic.
+   - Store secrets securely (e.g., in environment variables).
+   - Set appropriate token expiration and refresh policies.
+   - Validate all claims and permissions.
+
+**Summary:**
+- ASP.NET Core supports multiple authentication and authorization options.
+- This project will use JWT authentication for stateless, scalable, and secure API access.

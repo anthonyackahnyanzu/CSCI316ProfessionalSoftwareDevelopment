@@ -1,9 +1,10 @@
-using System.Collections.Generic;
-using System.Data;
-using System.Threading.Tasks;
 using Dapper;
 using StudentEnrollment.Repository.Entities;
 using StudentEnrollment.Repository.Interfaces;
+using StudentEnrollment.Repository.Sql;
+using System.Collections.Generic;
+using System.Data;
+using System.Threading.Tasks;
 
 namespace StudentEnrollment.Repository.Implementations
 {
@@ -13,7 +14,7 @@ namespace StudentEnrollment.Repository.Implementations
         public StudentRepository(IDbConnection db) { _db = db; }
 
         public async Task<IEnumerable<StudentEntity>> GetAllAsync() =>
-            await _db.QueryAsync<StudentEntity>("SELECT * FROM Student");
+            await _db.QueryAsync<StudentEntity>(SutudentSql.GetAllStudents);
 
         public async Task<StudentEntity> GetByIdAsync(int id) =>
             await _db.QueryFirstOrDefaultAsync<StudentEntity>("SELECT * FROM Student WHERE StudentId = @id", new { id });
