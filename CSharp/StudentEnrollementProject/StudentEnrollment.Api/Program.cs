@@ -9,6 +9,7 @@ using StudentEnrollment.Service.Mapping;
 using StudentEnrollment.Api.Settings;
 using Microsoft.Data.SqlClient;
 using StudentEnrollment.Service.Services;
+using StudentEnrollment.Service.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 

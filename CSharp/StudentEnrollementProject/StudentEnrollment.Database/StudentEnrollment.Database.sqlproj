@@ -78,5 +78,6 @@
     <None Include="Scripts\InsertRolesPermissions.sql" />
     <Build Include="Tables\ApprovalStatus.sql" />
     <None Include="Scripts\InsertApprovalStatus.sql" />
+    <None Include="Scripts\InsertRolePermission.sql" />
   </ItemGroup>
 </Project>
