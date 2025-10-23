@@ -81,6 +81,15 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("FullAccess", policy => policy.RequireClaim("permission", "FullAccess"));
 });
 
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost5174",
+    policy => policy.WithOrigins("http://localhost:5174")
+    .AllowAnyHeader()
+    .AllowAnyMethod());
+});
+
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
@@ -92,6 +101,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AllowLocalhost5174");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
